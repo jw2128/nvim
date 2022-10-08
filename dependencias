@@ -1,0 +1,8 @@
+sudo pacman -S npm
+sudo pacman -S yarn
+sudo npm install -g typescript typescript-language-server
+yay -S vscode-langservers-extracted
+sudo pacman -S powerline-fonts
+
+
+sudo pacman -S nodejs  OPCIONAL
