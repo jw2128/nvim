@@ -1,4 +1,4 @@
-set sw=2
+set sw=3 
 set number "enumerar vim
 set showcmd 
 set ruler
@@ -25,7 +25,8 @@ highlight Search ctermfg=0
 call plug#begin('~/.config/nvim/plugged')
 
 " Themes
-Plug 'sainnhe/gruvbox-material'
+"Plug 'sainnhe/gruvbox-material'
+ Plug 'projekt0n/github-nvim-theme'
 
 " status bar
 Plug 'vim-airline/vim-airline'
@@ -87,10 +88,20 @@ Plug 'tpope/vim-repeat'
 call plug#end()
 
 
-" GRUVBOX Configuracion
-set background=dark
-let g:gruvbox_material_background='hard'
-colorscheme gruvbox-material
+" theme GRUVBOX Configuracion
+" set background=dark
+" let g:gruvbox_material_background='hard'
+" colorscheme gruvbox-material
+
+"theme github configuracion
+colorscheme github_*
+let g:github_dark_sidebar = 0
+let g:github_function_style = "bold-italic"
+let g:github_sidebars = ["qf", "vista_kind", "terminal", "packer"]
+let g:github_colors = {
+  \ 'hint': 'orange',
+  \ 'error': '#ff0000'
+\ }
 
 " themes status bar
 let g:airline_theme='deus'
@@ -100,6 +111,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " snippets configuracion
 let g:UtilSnipsExpandTrigger="<tab>"
