@@ -2,6 +2,7 @@ sudo pacman -S npm
 sudo pacman -S yarn
 sudo npm install -g typescript typescript-language-server
 yay -S vscode-langservers-extracted
+other distro:  npm i -g vscode-langservers-extracted
 sudo pacman -S powerline-fonts
 
 
